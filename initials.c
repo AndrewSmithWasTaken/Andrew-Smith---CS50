@@ -5,10 +5,12 @@
 
 int main (void)
 {
+    //declaring and assigning variables, printing first char
     string name;       
     name = GetString();
     printf("%c", toupper(name[0]));
     
+    //checking for null value, iterating and printing initials
     if (name != NULL)
     {
         for (int i = 1, n = strlen(name); i < n; i++)
