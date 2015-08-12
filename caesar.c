@@ -6,25 +6,27 @@
 
 int main(int argc, string argv[])
 { 
-   //int key_as_int = atoi(argv[1]);
+   //input error checking with argc count
    if (argc != 2)
    {
         printf("Usage: ./caesar <key>\n");
         return 1;
    }
    
+   //declaring and assigning cipher key, input error checking
    int key = atoi(argv[1]);
    
    if (key <= 0)
    {
         printf("Key must be a non-negative integer.\n");
-        //printf("You chose: %s\n", argv[1]);
    }
    
+   //working with variables
    string plaintext;
    plaintext = GetString();
    int plaintext_length = strlen(plaintext);
-      
+   
+   //iterating, enciphering as appropriate and printing 
    for (int i=0; i < plaintext_length; i++)
    {
         if ( isalpha(plaintext[i]) && isupper(plaintext[i]))
