@@ -7,7 +7,8 @@
 int main(int argc, string argv[])
 { 
    
-   //input error checking with argc countif (argc != 2)
+   //input error checking with argc count
+   if (argc != 2)
    {
         printf("Usage: ./caesar <key>\n");
         return 1;
