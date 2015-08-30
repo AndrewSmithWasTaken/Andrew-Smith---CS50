@@ -151,6 +151,10 @@ int main(void)
                     bricks--;
                     points++;
                     updateScoreboard(window, label, points);
+                    if (bricks == 0)
+                    {
+                        break;
+                    }
                 }
             // linger before moving again
             pause(10);
