@@ -1,3 +1,3 @@
 # Andrew-Smith---CS50
 
-My completed scripts for the CS50 Problem Sets
+Problem sets for Harvard's intro to Comp Sci at edX
