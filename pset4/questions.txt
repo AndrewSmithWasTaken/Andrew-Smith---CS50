@@ -1,0 +1,19 @@
+0.  BMP <= 4,294,967,296, GIF <= 256 colors, JPEG <= 16,777,216 colors, PNG <= 281.5 trillion colors
+1.  GIF
+2.  Lossy compression approximates certain data and results in file alteration/degradation, whereas lossless yields a bit copy of the original.
+3.  JPEG
+4.  When a file is deleted, the first character of its name is changed to 0xe5 (meaning it is ignored by the O/S) and the pointers to subsequent sectors are deleted. Directory information is not modified.
+5.  We can destroy the physical disk, use a degausser or overwrite every sector with zeroes.
+6.  stdint.h is a header file which declares bit sizes (widths) for various integer types.
+7.  1, 4, 4, 2
+8.  0x4d42
+9.  bfSize is the size, in bytes, of the bitmap file and biSize is the number of bytes required by the BITMAPINFOHEADER structure.
+10. If biHeight is negative it means that the BMP is constructed from the top down.
+11. biBitCount
+12. 'Outfile' may be corrupt or there may be errors with permissions for example. Fopen returns NULL if the file cannot be opened, for whatever reason.
+13. In fread, the arguments are as follows: (location to store result of fread function, size of element to be read, number of elements, location to read from). In this case we want 1 element the size of a BITMAPHEADER.
+14. 3
+15. fseek sets the file position indicator for the stream pointed to by stream by offsetting a given number of Bytes from the position specified by whence
+16. FSEEK_CUR is a whence operator in fseek which sets the offset relative to the current file position indicator
+17. TODO
+18. Rob Bowden
